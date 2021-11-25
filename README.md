@@ -1,4 +1,7 @@
 ## Deploy to github pages
+**NOTE** 
+Need to have a github token to do a deploy to github pages
+
 `yarn deploy`
 You can visit the deployed app, at https://mikaojk.github.io/react-countdown
 
