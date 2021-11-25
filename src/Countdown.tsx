@@ -1,8 +1,12 @@
-import React, { Component } from 'react';
+import React, {Component, Validator} from 'react';
 import PropTypes from 'prop-types'
 
 class Countdown extends Component {
-    constructor(props) {
+    static defaultProps: { date: Date };
+    static propTypes: { date: Validator<NonNullable<string>> };
+    private interval: NodeJS.Timer | undefined;
+
+    constructor(props: Date) {
         super(props);
 
         this.state = {
@@ -15,7 +19,9 @@ class Countdown extends Component {
 
     componentDidMount() {
         this.interval = setInterval(() => {
-            const date = this.calculateCountdown(this.props.date);
+            let date: boolean | { sec: number; hours: number; min: number; days: number; years: number };
+            // @ts-ignore
+            date = this.calculateCountdown(this.props.date);
             date ? this.setState(date) : this.stop();
         }, 1000);
     }
@@ -24,7 +30,8 @@ class Countdown extends Component {
         this.stop();
     }
 
-    calculateCountdown(endDate) {
+    calculateCountdown(endDate: Date) {
+        // @ts-ignore
         let diff = (Date.parse(new Date(endDate)) - Date.parse(new Date())) / 1000;
 
         if (diff <= 0) return false;
@@ -59,10 +66,10 @@ class Countdown extends Component {
     }
 
     stop() {
-        clearInterval(this.interval);
+        clearInterval(this.interval as NodeJS.Timeout);
     }
 
-    addLeadingZeros(value) {
+    addLeadingZeros(value: string | any[]) {
         value = String(value);
         while (value.length < 2) {
             value = '0' + value;
@@ -71,34 +78,36 @@ class Countdown extends Component {
     }
 
     render() {
-        const countDown = this.state;
+        // @ts-ignore
+        const {days, hours, min, sec} = this.state;
+
 
         return (
             <div className="Countdown">
         <span className="Countdown-col">
           <span className="Countdown-col-element">
-              <strong>{this.addLeadingZeros(countDown.days)}</strong>
-              <span>{countDown.days === 1 ? 'Day' : 'Days'}</span>
+              <strong>{this.addLeadingZeros(days)}</strong>
+              <span>{days === 1 ? 'Day' : 'Days'}</span>
           </span>
         </span>
 
                 <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.hours)}</strong>
+            <strong>{this.addLeadingZeros(hours)}</strong>
             <span>Hours</span>
           </span>
         </span>
 
                 <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.min)}</strong>
+            <strong>{this.addLeadingZeros(min)}</strong>
             <span>Min</span>
           </span>
         </span>
 
                 <span className="Countdown-col">
           <span className="Countdown-col-element">
-            <strong>{this.addLeadingZeros(countDown.sec)}</strong>
+            <strong>{this.addLeadingZeros(sec)}</strong>
             <span>Sec</span>
           </span>
         </span>

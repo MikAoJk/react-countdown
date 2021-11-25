@@ -1,4 +1,12 @@
+## Technologies used
+* Yarn
+* Typescript
+
+#### Requirements
+* Yarn
+
 ## Deploy to github pages
+
 **NOTE** 
 Need to have a github token to do a deploy to github pages
 
