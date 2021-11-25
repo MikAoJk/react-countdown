@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Countdown from './Countdown.js';
-import navLogo from './Sort.svg';
+import navLogo from './Rød.svg';
 
 class App extends Component {
   render() {
