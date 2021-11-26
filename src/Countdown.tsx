@@ -1,12 +1,10 @@
-import React, {Component, Validator} from 'react';
-import PropTypes from 'prop-types'
+import React, {Component} from 'react';
 
 class Countdown extends Component {
-    static defaultProps: { date: Date };
-    static propTypes: { date: Validator<NonNullable<string>> };
+    static propTypes: { date: string };
     private interval: NodeJS.Timer | undefined;
 
-    constructor(props: Date) {
+    constructor(props: string) {
         super(props);
 
         this.state = {
@@ -31,8 +29,7 @@ class Countdown extends Component {
     }
 
     calculateCountdown(endDate: Date) {
-        // @ts-ignore
-        let diff = (Date.parse(new Date(endDate)) - Date.parse(new Date())) / 1000;
+        let diff = (Date.parse(new Date(endDate).toString()) - Date.parse(new Date().toString())) / 1000;
 
         if (diff <= 0) return false;
 
@@ -115,13 +112,5 @@ class Countdown extends Component {
         );
     }
 }
-
-Countdown.propTypes = {
-    date: PropTypes.string.isRequired
-};
-
-Countdown.defaultProps = {
-    date: new Date()
-};
 
 export default Countdown;
