@@ -17,6 +17,10 @@ You can visit the deployed app, at https://mikaojk.github.io/react-countdown
 
 In the project directory, you can run:
 
+### `yarn install`
+
+Install all the dependencies listed within package.json in the local node_modules folder.
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
