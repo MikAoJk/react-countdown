@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - testdeploy
 jobs:
   build:
     name: intall and build
@@ -15,3 +16,6 @@ jobs:
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: build # will run `yarn build` command
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: deploy # will run `yarn deploy` command
