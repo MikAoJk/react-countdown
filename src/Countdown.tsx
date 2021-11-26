@@ -18,6 +18,7 @@ class Countdown extends Component {
     componentDidMount() {
         this.interval = setInterval(() => {
             let date: boolean | { sec: number; hours: number; min: number; days: number; years: number };
+            // TODO remove @ts-ignore
             // @ts-ignore
             date = this.calculateCountdown(this.props.date);
             date ? this.setState(date) : this.stop();
@@ -75,9 +76,9 @@ class Countdown extends Component {
     }
 
     render() {
+        // TODO remove @ts-ignore
         // @ts-ignore
         const {days, hours, min, sec} = this.state;
-
 
         return (
             <div className="Countdown">
