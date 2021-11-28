@@ -5,7 +5,7 @@
 #### Requirements
 * Yarn
 
-## Deploy to github pages
+## Deploy to github pages manually
 
 **NOTE** 
 Need to have a github token to do a deploy to github pages
