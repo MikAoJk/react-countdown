@@ -16,11 +16,12 @@ jobs:
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: build # will run `yarn build` command
-      - run: ./bin/update-gh-pages.sh
-        env:
-          GITHUB_TOKEN: ${{ secrets.github_token }}
-          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: deploy # will run `yarn deploy` command
-
+          auth-token: ${{ secrets.DEPLOY_TOKEN }}
+      run: |
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        yarn run deploy -- -u "github-actions-bot <support+actions@github.com>"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
