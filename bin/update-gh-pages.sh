@@ -2,9 +2,9 @@
 
 set -eu
 
-repo_uri="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+repo_uri="https://x-access-token:${DEPLOY_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 remote_name="origin"
-main_branch="main"
+main_branch="testdeploy"
 target_branch="gh-pages"
 build_dir="dist"
 
