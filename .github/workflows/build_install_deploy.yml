@@ -16,10 +16,10 @@ jobs:
         with:
           node-version: '14'
       - run: yarn install
-      - name: build
+      - name: Build
         run: |
           yarn run build
-      - name: Deploy with gh-pages
+      - name: Deploy
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           yarn run deploy -- -u "github-actions-bot <support+actions@github.com>"
