@@ -15,9 +15,7 @@ jobs:
         uses: actions/setup-node@v2.1.2
         with:
           node-version: '14'
-      - name: build
-        run: |
-          yarn run build
+      - run: yarn install
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
