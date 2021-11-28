@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main
-      - testdeploy
 jobs:
   build:
     name: install, build and deploy
