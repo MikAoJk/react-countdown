@@ -16,7 +16,7 @@ jobs:
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: build # will run `yarn build` command
-      - run: ./bin/update-gh-pages
+      - run: ./bin/update-gh-pages.sh
         env:
           GITHUB_TOKEN: ${{ secrets.github_token }}
           DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
