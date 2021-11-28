@@ -18,6 +18,6 @@ jobs:
           cmd: build # will run `yarn build` command
       - uses: borales/actions-yarn@v2.3.0
         with:
-          cmd: build # will run `yarn deploy` command
+          cmd: deploy # will run `yarn deploy` command
         env:
           GITHUB_TOKEN: ${{ secrets.github_token }}
