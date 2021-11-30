@@ -4,6 +4,9 @@
 
 #### Requirements
 * Yarn
+Can be installed through npm package manager, with this command:
+`npm install --global yarn`
+
 
 ## Deploy to github pages manually
 
