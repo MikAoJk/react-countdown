@@ -4,18 +4,10 @@
 
 #### Requirements
 * Yarn
+* Npm
 
 Can be installed through npm package manager, with this command:
 `npm install --global yarn`
-
-
-## Deploy to github pages manually
-
-**NOTE** 
-Need to have a github token to do a deploy to github pages
-
-`yarn deploy`
-You can visit the deployed app, at https://mikaojk.github.io/react-countdown
 
 ## Available Scripts
 
@@ -47,6 +39,15 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Deploy to github pages manually
+
+**NOTE**
+Need to have a github token to do a deploy to github pages
+
+`yarn deploy`
+You can visit the deployed app, at https://mikaojk.github.io/react-countdown
+
 
 ### `yarn eject`
 
