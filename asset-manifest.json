@@ -1,21 +1,14 @@
 {
   "files": {
-    "main.css": "/react-countdown/static/css/main.dfeb7474.chunk.css",
-    "main.js": "/react-countdown/static/js/main.85a5a761.chunk.js",
-    "main.js.map": "/react-countdown/static/js/main.85a5a761.chunk.js.map",
-    "runtime-main.js": "/react-countdown/static/js/runtime-main.4dcd7b65.js",
-    "runtime-main.js.map": "/react-countdown/static/js/runtime-main.4dcd7b65.js.map",
-    "static/js/2.be9e5a37.chunk.js": "/react-countdown/static/js/2.be9e5a37.chunk.js",
-    "static/js/2.be9e5a37.chunk.js.map": "/react-countdown/static/js/2.be9e5a37.chunk.js.map",
+    "main.css": "/react-countdown/static/css/main.7c9b9158.css",
+    "main.js": "/react-countdown/static/js/main.73d9eeda.js",
+    "static/media/Rød.svg": "/react-countdown/static/media/Rød.f2330ee1bbb40a183b330fd894cc7bcf.svg",
     "index.html": "/react-countdown/index.html",
-    "static/css/main.dfeb7474.chunk.css.map": "/react-countdown/static/css/main.dfeb7474.chunk.css.map",
-    "static/js/2.be9e5a37.chunk.js.LICENSE.txt": "/react-countdown/static/js/2.be9e5a37.chunk.js.LICENSE.txt",
-    "static/media/Rød.f2330ee1.svg": "/react-countdown/static/media/Rød.f2330ee1.svg"
+    "main.7c9b9158.css.map": "/react-countdown/static/css/main.7c9b9158.css.map",
+    "main.73d9eeda.js.map": "/react-countdown/static/js/main.73d9eeda.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.4dcd7b65.js",
-    "static/js/2.be9e5a37.chunk.js",
-    "static/css/main.dfeb7474.chunk.css",
-    "static/js/main.85a5a761.chunk.js"
+    "static/css/main.7c9b9158.css",
+    "static/js/main.73d9eeda.js"
   ]
 }
