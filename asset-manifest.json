@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-countdown/static/css/main.7c9b9158.css",
-    "main.js": "/react-countdown/static/js/main.73d9eeda.js",
+    "main.js": "/react-countdown/static/js/main.6cc14be9.js",
     "static/media/Rød.svg": "/react-countdown/static/media/Rød.f2330ee1bbb40a183b330fd894cc7bcf.svg",
     "index.html": "/react-countdown/index.html",
     "main.7c9b9158.css.map": "/react-countdown/static/css/main.7c9b9158.css.map",
-    "main.73d9eeda.js.map": "/react-countdown/static/js/main.73d9eeda.js.map"
+    "main.6cc14be9.js.map": "/react-countdown/static/js/main.6cc14be9.js.map"
   },
   "entrypoints": [
     "static/css/main.7c9b9158.css",
-    "static/js/main.73d9eeda.js"
+    "static/js/main.6cc14be9.js"
   ]
 }
