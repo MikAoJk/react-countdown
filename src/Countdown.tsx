@@ -16,6 +16,7 @@ export const Countdown = ({date}: CountdownProps) => {
             }, 1000);
             return () => clearInterval(interval)
         }
+        // eslint-disable-next-line
         , []
     )
 
