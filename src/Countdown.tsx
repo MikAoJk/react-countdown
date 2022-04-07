@@ -91,6 +91,19 @@ const timeLeft = (seconds: number) => {
     }
     timeLeft.sec = seconds;
 
+    // TODO find out why year is 52082, when coundown time i pased
+    if (timeLeft.years === 52082) {
+        return setTimeleftToZero(timeLeft)
+    }
+
+    return timeLeft;
+}
+
+const setTimeleftToZero = (timeLeft: CalculatedTimeLeft) => {
+    timeLeft.years = 0
+    timeLeft.hours = 0
+    timeLeft.days = 0
+    timeLeft.sec = 0
     return timeLeft;
 }
 
