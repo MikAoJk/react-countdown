@@ -20,6 +20,20 @@
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
+  "resolutions": {
+    "minimist": "^1.2.6",
+    "ansi-regex": "^5.0.1",
+    "node-forge": "^1.3.0",
+    "lodash": "^4.17.20",
+    "follow-redirects": "^1.14.8",
+    "nth-check": "^2.0.1",
+    "nodejs-tmpl": "^1.0.5",
+    "path-parse": "^1.0.7",
+    "dns-packet": "^1.3.2",
+    "browserslist": "^4.16.5",
+    "najv": "^6.12.3",
+    "tmpl": "^1.0.5"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -41,5 +55,5 @@
   "devDependencies": {
     "gh-pages": "^3.2.3"
   },
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.2.0"
 }
