@@ -1,3 +1,5 @@
+[![build,install and deploy main branch](https://github.com/MikAoJk/react-countdown/actions/workflows/build_install_deploy.yml/badge.svg?branch=main)](https://github.com/MikAoJk/react-countdown/actions/workflows/build_install_deploy.yml)
+
 ## Technologies used
 * Yarn
 * Typescript
