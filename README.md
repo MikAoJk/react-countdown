@@ -32,6 +32,18 @@ You will also see any lint errors in the console.
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
+
+### Docker
+
+#### Creating a docker image
+Creating a docker image should be as simple as `docker build -t react-countdown .`
+
+#### Running a docker image
+`docker run --rm -it -p 3000:3000 react-countdown`
+Application should be avaliale at: [http://localhost:3000/react-countdown](http://localhost:3000/react-countdown)
+to view it in the browser.
+
+
 ## Deploy to github pages manually
 
 **NOTE**
