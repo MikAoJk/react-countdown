@@ -1,6 +1,7 @@
 import React from 'react';
-import {Countdown} from "./Countdown";
-import logo from './Rød.svg';
+import {Countdown} from "../components/Countdown";
+import logo from '../assets/red_nav_logo.svg';
+import './App.css'
 
 function App () {
     return (

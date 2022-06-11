@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import './CountDown.css'
 
 interface CountdownProps {
     date: string;
@@ -91,7 +92,7 @@ const timeLeft = (seconds: number) => {
     }
     timeLeft.sec = seconds;
 
-    // TODO find out why year is 52082, when coundown time i pased
+    // TODO find out why year is 52082, when countdown time i passed
     if (timeLeft.years === 52082) {
         return setTimeleftToZero(timeLeft)
     }
