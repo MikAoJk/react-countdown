@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-countdown/static/css/main.7c9b9158.css",
-    "main.js": "/react-countdown/static/js/main.e6b4ee57.js",
-    "static/media/Rød.svg": "/react-countdown/static/media/Rød.f2330ee1bbb40a183b330fd894cc7bcf.svg",
+    "main.css": "/react-countdown/static/css/main.dd048c0c.css",
+    "main.js": "/react-countdown/static/js/main.9ace7032.js",
+    "static/media/red_nav_logo.svg": "/react-countdown/static/media/red_nav_logo.f2330ee1bbb40a183b330fd894cc7bcf.svg",
     "index.html": "/react-countdown/index.html",
-    "main.7c9b9158.css.map": "/react-countdown/static/css/main.7c9b9158.css.map",
-    "main.e6b4ee57.js.map": "/react-countdown/static/js/main.e6b4ee57.js.map"
+    "main.dd048c0c.css.map": "/react-countdown/static/css/main.dd048c0c.css.map",
+    "main.9ace7032.js.map": "/react-countdown/static/js/main.9ace7032.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c9b9158.css",
-    "static/js/main.e6b4ee57.js"
+    "static/css/main.dd048c0c.css",
+    "static/js/main.9ace7032.js"
   ]
 }
