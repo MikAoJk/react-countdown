@@ -5,9 +5,9 @@
   "homepage": "http://mikaojk.github.io/react-countdown",
   "dependencies": {
     "@types/node": "^17.0.31",
-    "@types/react": "^18.0.8",
+    "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.3",
-    "react": "^18.1.0",
+    "react": "^18.2.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.6.4"
